@@ -1,4 +1,4 @@
-# VL53L1X for ROS Guide
+# LSM9DS1 for ROS Guide
 In order to receive serial data from the arduino, the rosserial library is used.
 [https://github.com/ros-drivers/rosserial]
 
