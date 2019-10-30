@@ -102,12 +102,12 @@ void loop()
   data_arr[0] = imu.calcGyro(imu.gx);
   data_arr[1] = imu.calcGyro(imu.gy);
   data_arr[2] = imu.calcGyro(imu.gz);
-  data_arr[3] = imu.calcGyro(imu.ax);
-  data_arr[4] = imu.calcGyro(imu.ay);
-  data_arr[5] = imu.calcGyro(imu.az);
-  data_arr[6] = imu.calcGyro(imu.mx);
-  data_arr[7] = imu.calcGyro(imu.my);
-  data_arr[8] = imu.calcGyro(imu.mz);
+  data_arr[3] = imu.calcAccel(imu.ax);
+  data_arr[4] = imu.calcAccel(imu.ay);
+  data_arr[5] = imu.calcAccel(imu.az);
+  data_arr[6] = imu.calcMag(imu.mx);
+  data_arr[7] = imu.calcMag(imu.my);
+  data_arr[8] = imu.calcMag(imu.mz);
   imu_msg.data = data_arr;
   pub_imu.publish(&imu_msg);
   nh.spinOnce();
